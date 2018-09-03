@@ -7,5 +7,5 @@ echo $(DATEYMD)
 echo $DATEYMD
 
 
-echo -e "layout: post\ntitle:$1\ndate:$DATEYMD\ncategories: [others]\ntags: [markdown]\nimage: Broadcast_Mail.pn" >> ./_posts/$DATEYMD-$1.md
+echo -e "---\nlayout: post\ntitle:$1\ndate:$DATEYMD\ncategories: [others]\ntags: [markdown]\nimage: Broadcast_Mail.pn\n---" >> ./_posts/$DATEYMD-$1.md
 sleep 10
